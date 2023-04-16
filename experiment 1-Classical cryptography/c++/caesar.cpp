@@ -14,7 +14,7 @@ string encrypt (string plain , int k){
         else if(isupper(plain[i])){
             result += char (((val - 65 + k) % 26)+65) ;
         }
-        else{
+        else if(islower(plain[i])){
            result += char (((val - 97 + k) % 26)+97) ;
         }
   }
